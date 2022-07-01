@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+            th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8"/>
+    <title>This is Signup page</title>    
+</head>
+<body>
+
+      <section class="banner d-flex justify-content-center align-items-center">
+      
+             <div class="container  ">
+             <div class="signup">
+            
+           <!--  <h2 class="text-center">SignUp here !!!</h2>-->
+             
+             <form th:action="@{/do_register}" method="post" th:object="${user}">
+             <br>
+             <h2 class="text-center">SignUp here !!!</h2>
+             
+ 
+             
+             <!-- for User Name-->
+              <div class="mb-3">
+                     <label for="exampleFormControlInput1" class="form-label" >User Name</label>
+                     <input type="text" class="form-control"  placeholder="Enter your fullname" name="userName">
+                </div>
+                
+                <!-- for Employee Id-->
+              <div class="mb-3">
+                     <label for="exampleFormControlInput1" class="form-label" > Employee Id</label>
+                     <input type="text" class="form-control"  placeholder="Enter Employee Id" name="empId">
+                </div>
+                  
+             
+             <!--for email-->
+                <div class="mb-3">
+                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                     <input type="email" class="form-control"  placeholder="name@example.com" name="email">
+                </div>
+                <div th:if="${param.error}"  class="alert alert-danger">
+                     Email already userd!!
+                </div>
+               
+                
+              
+                
+                <!-- for PasswordS-->
+                
+              <div class="mb-3">
+                     <label for="exampleFormControlInput1" class="form-label">Enter Password here</label>
+                     <input type="password" class="form-control"  placeholder="password" name="password">
+                </div>
+                
+                <!--for email  confermation-->
+                <div class="mb-3">
+                     <label for="exampleFormControlInput1" class="form-label">Re-enter your Password here</label>
+                     <input type="password" class="form-control"  placeholder="password" name="password1">
+                </div>
+                
+                   <!--tearm and condition agreement-->
+                         
+                          <div class= "form-group form-check ">
+                          
+                             <input type="checkbox"
+                             name="agreement"
+                             class="form-check-input"
+                             id="agreement"
+                             />
+                             
+                             <label for="agreement">Accept terms and condition</label>
+                                  
+                          
+                          </div>
+                          
+                          
+                          
+                          
+                          <div class="container text-center">
+                          
+                          <button type="submit" class="btn bg-primary btn-block text-white">
+                             Submit
+                          </button>
+                          <button type="reset" class="btn bg-warning btn-block">
+                             Reset
+                          </button>
+                          
+                          
+                          </div>
+                
+                
+             </form> 
+             </div>
+             </div>
+      </section >
+     
+
+</body>
+</html >

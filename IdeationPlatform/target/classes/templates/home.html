@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+            th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" th:href="@{/css/style2.css}" />
+    
+    <title>This is home page</title>
+        
+</head>
+<body>
+
+      <section class="banner d-flex justify-content-center align-items-center">
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <div class="align-items-center ">
+            <h1 class="container ">Welcome to Ideation Platform</h1> <br><br><br>
+            <!--<a class=" nav-link " href="#" th:href="@{/signin}" tabindex="-1"
+								aria-disable="true">Login</a>-->
+			<div class="text-center border margin" style="background-color:rgb(255, 255, 255);">					
+			<!--<button type="button" class="btn btn-light"  href="#" th:href="@{/signin}" ><a class="nav-link"  href="#" th:href="@{/signin}"
+          tabindex="-1" aria-disable="true">Login</a></button>	-->
+          <a class="nav-link"  href="#" th:href="@{/signin}"
+          tabindex="-1" aria-disable="true">Login</a>
+            </div>
+								
+      </div>
+      </section >
+     
+
+</body>
+</html >
