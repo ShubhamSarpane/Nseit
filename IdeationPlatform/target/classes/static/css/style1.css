@@ -3,6 +3,10 @@ body{
 	/*background: rgb(192, 192, 192)!important;*/
 	/*background-image: url("HomeBackground.png");*/
 	background-image: url('/img/HomeBackground.png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
 	
 }
 
@@ -23,7 +27,7 @@ nav{
 .signup{
   width: 500px;
   margin: auto;
-  border: 3px solid rgb(128, 128, 128);
+  /*border: 3px solid rgb(128, 128, 128);*/
 }
 
 #login .container #login-row #login-column #login-box {
