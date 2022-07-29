@@ -12,6 +12,7 @@ public class User {
 	
 	
 	private String userName;
+	
 	@Id
 	private long empId;
 	
